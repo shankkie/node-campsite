@@ -22,8 +22,8 @@ const campgroundRoute = require("./routes/campgrounds"),
     commentRoute = require("./routes/comments"),
     indexRouter = require("./routes/index")
 
-// var url = process.env.DATABASEURL || "mongodb://localhost/yelpcamp";
-const url = "mongodb://nitrous:abcd1234@ds011883.mlab.com:11883/nitrouslab";
+var url = process.env.DATABASEURL || "mongodb://localhost/yelpcamp";
+
 
 mongoose.connect(url);
 
