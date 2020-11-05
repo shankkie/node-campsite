@@ -1,73 +1,75 @@
-#refactor mongoose code
+# Node Project using express, mongodb and ejs.
+
+### Refactor mongoose code
 
 * create a models directory
 * use module.exports
 * require everything correctly
 
-#Add seed file
+### Add seed file
 * add a seed js file
 * run the seed js file everytime the server starts
 
-#Add User models
+### Add User models
 
 * Install all packages needed for Auth
 * Define User Model
 
-# Register
+### Register
 * Configure passport
 * Add register routes
 * Add register template
 
 
-# login
+### login
 * Add login routes
 * Add login template
 
 
-# logout/Navbar
+### logout/Navbar
 * Add logout routes
 * prevent user from adding comment if not signed in
 * Add links to navbar
 * show/hide auth link correctly
 
-# Show/Hide Links
+### Show/Hide Links
 * show hide auth link correctly
 
-# Refactoring all routes
+### Refactoring all routes
 * use express router to reorganise all routes
 
-# Users+ comments
+### Users+ comments
 * Assosiate users and comments
 * Save authors name to a comment automatically
 
-# Users+ camgrounds
+### Users+ camgrounds
 * prevent unauthenticated user from creating a campground
 * Save username+id  to a newly created campground
 
-# Editing Campgrounds
+### Editing Campgrounds
 * Adding method override
 * Add edit route for campgrounds
 * Add link to edit page
 * Add update route
 * Fix $set problem
 
-# Deleting Campgrounds
+### Deleting Campgrounds
 * Adding deleting route
 * Add delete Button
 
-# Authorisation Campgrounds
+### Authorisation Campgrounds
 * User can edit only his campgrounds
 * User can delete only his campgrounds
 * Hide/Show Edit/Delete Button
 
-# Editing Comments
+### Editing Comments
 * Add Edit route for comments
 * Add Edit Btn
 * Add Update route
 
-# Delete Comments
+### Delete Comments
 * Add Destroy route
 * Add Delete Btn
 
-#heroku 
+### heroku config
 heroku config:set DATABASEURL= <url>
