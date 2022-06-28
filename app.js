@@ -14,7 +14,7 @@ const express = require('express'),
     methodOveride = require("method-override"),
     flash = require("connect-flash");
 
-// console.log(process.env.PORT);
+const port = process.env.PORT || 3000;
 // console.log(process.env.IP);
 // console.log(process.env.DATABASEURL);
 
@@ -66,6 +66,6 @@ app.use(indexRouter);
 app.use('/campgrounds', campgroundRoute);
 app.use('/campgrounds/:id', commentRoute);
 
-app.listen('9090', process.env.IP, function() {
-    console.log('****Yelpcamp Server Started*******', process.env.PORT);
+app.listen(port, () => {
+    console.log(`Yelpcamp Server Started: ${process.env.PORT}`);
 })
